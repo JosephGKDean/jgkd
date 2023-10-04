@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon!</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <style>
+        .sec-text {
+            border-left: 3px solid black;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;">JGKD.dev is coming soon!</h1>
+    <div class="title">
+        <span class="text first-text">I'm </span>
+        <span class="text sec-text">JGKD.dev</span>
+    </div>
 </body>
 </html>
