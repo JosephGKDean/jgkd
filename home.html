@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon!</title>
+    <meta name="description" content="This is the homepage of JGKD.dev website! | This is profile for Joseph Dean.">
+    <title>Home | JGKD.dev</title>
 
+    <link rel="stylesheet" href="./src/css/home.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <style>
-        .sec-text {
-            border-left: 3px solid black;
-            animation: 
-                typing 3.5s steps(40, end),
-                blink-caret .75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: orange; }
-        }
-    </style>
 </head>
 <body>
+    <header>
+        <h1>JGKD.dev</h1>
+        <nav>
+            <ul class="navLinks">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <a href="#contact"><button>Contact Me</button></a>
+    </header>
     <div class="title">
         <span class="text first-text">I'm </span>
-        <span class="text sec-text">JGKD.dev</span>
+        <span class="text sec-text"></span>
     </div>
+    <h1 class="temp">Coming Soon!</h1>
+    <div id="about"></div>
+    <div id="contact"></div> 
+    <footer></footer>
 </body>
 </html>
