@@ -44,65 +44,44 @@
     border-left: 2px solid #1FC742;
     right: -8px;
     background-color: black;
-    animation: cursor .8s infinite, typing 20s steps(18);
+    animation: cursor .8s infinite, typing 1s steps(18, end) forwards;
 }
 
-li, a, button {
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    color: #025B18;
+#contact {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    text-align: center;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    color: #025b18;
-}
-
-header h1 {
+#email {
+    font-style: italic;
     font-family: "Pixelify Sans";
-    cursor: pointer;
+    font-weight: 500;
+    font-size: 50px;
 }
 
-.navLinks {
-    list-style: none;
+#email::before {
+    content: "[ ";
+    font-family: sans-serif;
+    font-style:normal;
 }
 
-.navLinks li {
-    display: inline-block;
-    padding: 0px 20px;
+#email::after {
+    content: " ]";
+    font-family: sans-serif;
+    font-style:normal;
 }
 
-.navLinks li a  {
-    transition: all 0.3s ease 0s;
+#email:hover {
+    color: rgba(2, 91, 24, 0.8);
 }
 
-.navLinks li a:hover {
-    color: #1FC742;
-}
-
-button {
-    padding: 9px 25px;
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0px;
-    border-color: #025b18;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #EEF1DB;
-}
-
-button:hover {
-    background-color: rgba(2, 91, 24, 0.8);
-}
 
 @keyframes typing {
-    5%, 10%, 15%, 20%, 25%, 30%, 35%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95% {
+    to {
         width: 0;
     }
+    
 }
 
 @keyframes cursor {

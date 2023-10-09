@@ -8,18 +8,20 @@
 
     <link rel="stylesheet" href="./src/css/home.css">
     <link rel="stylesheet" href="./src/css/style.css">
+
+    <script src="background.js" defer>console.log("Loading: background.js")</script>
 </head>
 <body>
     <header>
         <h1>JGKD.dev</h1>
         <nav>
             <ul class="navLinks">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">CV</a></li>
+                <li><a href="./projects.html">Projects</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="#contact"><button>Contact Me</button></a>
+        <a href="https://blog.jgkd.dev/home"><button>Blog</button></a>
     </header>
     <div class="title">
         <span class="text first-text">I'm </span>
@@ -27,7 +29,19 @@
     </div>
     <h1 class="temp">Coming Soon!</h1>
     <div id="about"></div>
-    <div id="contact"></div> 
+    <div id="contact">
+        <h1>Contact Me (bit weird, but ok ig):</h1>
+        <a id="email" href="mailto:joseph@jgkd.dev" onclick="email()">Click Here</a>
+    </div> 
     <footer></footer>
 </body>
+<script>
+    function email() {
+        emailLink = document.getElementById("email");
+        emailLink.innerHTML = "joseph@jgkd.dev";
+        emailLink.style.color = "white";
+        emailLink.style.fontFamily = "sans-serif"
+        emailLink.style.fontWeight = "0"
+    }
+</script>
 </html>

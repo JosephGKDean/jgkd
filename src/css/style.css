@@ -6,6 +6,8 @@
 
 :root {
     --black: black;
+    --darkgreen: #025B18;
+    --darkgray: #747474;
 }
 
 * {
@@ -21,4 +23,69 @@ body {
     /* background-color: #2E2E2E; lighter black - try with designs*/
     background-color: black;
     font-family: "Comfortaa", sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 40px;
+    color: var(--darkgreen)
+}
+
+li, a, button {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #025B18;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    color: #025b18;
+}
+
+header h1 {
+    font-family: "Pixelify Sans";
+    cursor: pointer;
+}
+
+.navLinks {
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a  {
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+    color: #1FC742;
+}
+
+.current {
+    color: #1FC742;
+    text-decoration: underline;
+}
+
+button {
+    padding: 9px 25px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0px;
+    border-color: #025b18;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #EEF1DB;
+}
+
+button:hover {
+    background-color: rgba(2, 91, 24, 0.8);
 }
