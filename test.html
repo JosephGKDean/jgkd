@@ -16,7 +16,7 @@
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ longUrl: longUrl }),
+            body: JSON.stringify({ longUrl }),
         })
             .then(response => response.json())
             .then(data => {
