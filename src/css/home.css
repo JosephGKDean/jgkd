@@ -47,35 +47,6 @@
     animation: cursor .8s infinite, typing 1s steps(18, end) forwards;
 }
 
-#contact {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    text-align: center;
-}
-
-#email {
-    font-style: italic;
-    font-family: "Pixelify Sans";
-    font-weight: 500;
-    font-size: 50px;
-}
-
-#email::before {
-    content: "[ ";
-    font-family: sans-serif;
-    font-style:normal;
-}
-
-#email::after {
-    content: " ]";
-    font-family: sans-serif;
-    font-style:normal;
-}
-
-#email:hover {
-    color: rgba(2, 91, 24, 0.8);
-}
-
 
 @keyframes typing {
     to {

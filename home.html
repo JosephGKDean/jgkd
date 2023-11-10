@@ -13,14 +13,7 @@
 </head>
 <body>
     <header>
-        <h1>JGKD.dev</h1>
-        <nav>
-            <ul class="navLinks">
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="#"><h1>JGKD.dev</h1></a>
         <a href="https://blog.jgkd.dev/home"><button>Blog</button></a>
     </header>
     <div class="title">
@@ -28,20 +21,10 @@
         <span class="text sec-text"></span>
     </div>
     <h1 class="temp">Coming Soon!</h1>
-    <div id="about"></div>
-    <div id="contact">
-        <h1>Contact Me (bit weird, but ok ig):</h1>
-        <a id="email" href="mailto:joseph@jgkd.dev" onclick="email()">Click Here</a>
-    </div> 
-    <footer></footer>
+    <div class="mright">
+        <a class="mright-link" href="/projects.html" style="font-size: 5vw;">Projects</a>
+        <a class="mright-link" href="#about" style="font-size: 5vw;;">About</a>
+        <a class="mright-link" href="#contact" style="font-size: 5vw;">Contact</a>
+    </div>
 </body>
-<script>
-    function email() {
-        emailLink = document.getElementById("email");
-        emailLink.innerHTML = "joseph@jgkd.dev";
-        emailLink.style.color = "white";
-        emailLink.style.fontFamily = "sans-serif"
-        emailLink.style.fontWeight = "0"
-    }
-</script>
 </html>

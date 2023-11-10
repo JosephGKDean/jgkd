@@ -89,3 +89,53 @@ button {
 button:hover {
     background-color: rgba(2, 91, 24, 0.8);
 }
+
+.mright {
+    white-space: nowrap;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-family: "Pixelify Sans";
+    font-weight: 500;
+}
+
+
+.mright-link:before {
+    content: "[ ";
+    font-family: sans-serif;
+    font-style:normal;
+}
+
+.mright-link:after {
+    content: " ]";
+    font-family: sans-serif;
+    font-style:normal;
+}
+
+.mright a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--darkgreen);
+}
+
+.mright a:visited {
+    color: var(--darkgreen);
+}
+
+.mright a:hover {
+    /* color: lightgrey; */
+    color: #00c7fe;
+    animation: gradient 2s linear infinite;
+}
+
+@keyframes gradient{
+    from{
+        filter:hue-rotate(0deg)
+    }
+    to{
+        filter:hue-rotate(360deg)
+    }
+}
