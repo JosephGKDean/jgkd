@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const longUrl = "https://jgkd.dev";
+
+        fetch('https://url-gen.josephgkdean.workers.dev/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ longUrl }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Shortened URL:', data.shortUrl);
+                // You can use the shortened URL as required
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+</script>
+</html>
