@@ -8,6 +8,7 @@
     --black: black;
     --darkgreen: #025B18;
     --darkgray: #747474;
+    --temp: #3f3f3f;
 }
 
 * {
@@ -131,11 +132,72 @@ button:hover {
     animation: gradient 2s linear infinite;
 }
 
+
+.mright .mright-link {
+    font-size: 5vw;
+}
+
+.moblie-mright {
+    white-space: nowrap;
+    padding: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-family: "Pixelify Sans";
+    font-weight: 500;
+}
+
+
+
+.moblie-mright {
+    align-items: center;
+    text-align: center;
+}
+
+.moblie-mright .mright-link {
+    font-size: 5vw;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.moblie-mright .mright-link:nth-child(1) {
+    font-size: 5vw;
+    font-weight: 900;
+    padding: 0px;
+}
+
+
+.moblie-mright a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--darkgreen);
+}
+
+.moblie-mright a:visited {
+    color: var(--darkgreen);
+}
+
+.moblie-mright a:hover {
+    /* color: lightgrey; */
+    color: #00c7fe;
+    animation: gradient 2s linear infinite;
+}
+
+
 @keyframes gradient{
     from{
         filter:hue-rotate(0deg)
     }
     to{
         filter:hue-rotate(360deg)
+    }
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .mright .mright-link {
+        font-size: 10vw;
+        display: block;
     }
 }
