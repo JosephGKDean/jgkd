@@ -51,6 +51,11 @@ section {
     margin-top: 75vh;
 }
 
+p {
+    text-align: center;
+    color: rgb(209, 204, 204);
+}
+
 @keyframes typing {
     to {
         width: 0;
